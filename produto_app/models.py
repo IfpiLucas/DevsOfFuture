@@ -1,5 +1,7 @@
 from django.db import models
 
+tipos = [['flor', 'Flor'], ['vaso', 'Vaso'], ['planta', 'Planta'], ['muda', 'Muda']]
+
 class Produto(models.Model):
     nome = models.CharField(max_length=80)
     tipo = models.CharField(max_length=6, choices=tipos)
